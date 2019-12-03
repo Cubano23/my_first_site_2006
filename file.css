@@ -1,0 +1,47 @@
+<!--aqui começa o codigo do file  css que sera utilizado nas outras pages  --> 
+<!--sempre com a tag <style></style>-->
+<style type="text/css">	
+	   
+	p       {}
+
+		 
+	.titulo {
+		font-size: 40px;
+		text-align:center;
+		color:blue
+		}
+
+	.links  {
+		font-size:20px;
+		text-align:center;
+		color:"#000000"
+		}
+                A:active{color:blue; text-decoration; }
+	        A:hover {color:orange; text-decoration; }
+
+        .cell   { 
+                font-size:20px;
+                text-align:center;
+		color:"#000000"
+                }
+        .fundo  {
+                background-color:#b6FF9F;
+                background-image: url("images/fundo.gif");
+                background-repeat: repeat-y
+                }
+        .texto  {
+                font-size:10px;
+                font-family: courier, serif;
+                font-weight: normal;
+		text-align:justfy;
+		color:"#000000"
+                }
+        .subTit {
+		font-size: 20px;
+		text-align:justify;
+		color:blue
+		}
+       
+                
+        
+</style>

@@ -1,0 +1,38 @@
+<HTML>
+	<HEAD>
+		<TITLE>Curso Técnico de Infomática</TITLE>
+	</HEAD>
+
+<!--aqui vamos buscar as frames e damos os tamanhos e as dimensoes necessarias-->
+	
+	<FRAMESET cols="0%,75%,0%" FRAMEBORDER="0" FRAMESPACING="0">
+
+  		<!--aqui uma frame a ser chamada-->
+		<FRAME name="Vdir"  src="vertical.html" >
+
+  		
+	<FRAMESET rows="20%,*,0%" FRAMEBORDER="0" FRAMESPACING="0">
+
+<!--aqui 2 frames a ser chamada-->
+		<FRAME name="Htop"  src="htop.html" NORESIZE SCROLLING="NO">
+		<FRAME name="video" src="frame_manuais.html">	
+		
+	
+	</FRAMESET>
+<!--aqui frame sem barra de navegaçao scrolling="no"-->
+	<FRAME name="vesq"  src="vertical.html" NORESIZE SCROLLING="NO">
+	</FRAMESET>
+<!--aqui caso o browser nao suportar frames exibirá a msg no body atravez da tag <noframe>-->
+<noframes>
+  <body>
+	<p class="titulo">O seu browser não suporta frames!
+  </body>
+</noframes>
+	
+	</FRAMESET>
+<!--fim-->
+
+
+		
+
+</HTML>

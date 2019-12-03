@@ -1,0 +1,85 @@
+<HTML>
+  <head>
+<!--aqui usamos uma tag <sript> com uma funçao a ser usada por um botao no fim da page-->
+    <script>
+<!--aqui funçao de direcionamento para page anterior-->
+      function goToURL() 
+		{ 
+			window.location = "javascript:history.back()"; 
+		}
+    </script>
+  </head>
+  <BODY bgcolor=#b6ff9f >
+<!--aqui temos o inicio de um form-->
+<!--aqui temos o nome do link a chamar para inicio da pag..-->
+    <a name="topo">
+    <FORM  name="form" method="post" action="recebe.html">
+      <h1 align=center <b><i>Formulário de pré inscrição</H1><hr color=64ff64 >	
+        <table >
+          <tr>
+            <td>
+	      <font color=blue>Nome:</font><BR>
+<!--aqui textBox-->
+		 <INPUT TYPE = "TEXT" NAME ="NOME" ></TD><br>
+	    <td>
+	      <font color=blue>E-mail:</font><BR>
+	         <INPUT TYPE = "Text" NAME ="E-mail"></TD><br>
+	  <tr>
+	    <td>
+	       <font color=blue>Morada: <BR>
+	         <INPUT TYPE = "Text" NAME ="Morada"><br>
+	    </td>
+            <td>
+	        <font color=blue>TELEFONE:<br>
+	         <INPUT TYPE = "Text" NAME ="TELEFONE"></TD><BR>
+	    </td>
+          </tr><br>
+          <tr>
+	    <td>
+               <font color=blue> Gênero:<br>
+<!--aqui um radio para escolhas de genero-->
+	         <INPUT TYPE = "radio" NAME ="genero" value="Masculino">Masculino<br>
+            </td>
+            <td>
+               <font color=blue>
+                 <INPUT TYPE = "radio" NAME ="genero" value="Feminino">Feminino<br>
+            </td>
+          </tr>
+        </table>
+        <table>
+           <tr>
+	    <td>
+	       <font color=red>CP:<br>
+	         <INPUT TYPE = "Text" NAME ="CP"><br>			
+	       País:<br>
+<!--aqui uma dropDown para esc.. items desejados-->
+		 <select name="País">
+		   <option name=Brasil value=one> Brasil </option>
+		   <option name=Portugal value=two> Portugal </option>
+		   <option name=França value=three> França </option>
+		   <option name=US value=four> US </option>
+		 </select>
+            </td>
+          </tr><br>
+           <tr>
+	     <td>
+                Observações:<br>
+<!--aqui uma area para editar texto -->
+		 <textarea rows="5" cols="50" noresize scrolling="no" ></textarea><br><br>
+             </td>
+           </tr><br>
+        </table>
+                 <p align=center>
+<!--aqui 3 butoes "submit"vai direccionar a pag, "reset" limpa os dados e "button" usa a funçao do topo da pag-->
+			  <INPUT TYPE="submit" VALUE="Enviar">
+			  <input type="reset" value="Limpar">
+                          <input type="button" value="Cancelar" onclick="goToURL();">
+		 </p>
+<!--aqui temos um paragrafo com um link direccionando apg.. para o início-->
+<p align=center>
+<a href="#topo" >Click aqui para voltar<br>ao início do form!</a></p>
+	 	
+    </FORM>
+<!--aqui termina o form-->	
+  </BODY>
+</HTML>
